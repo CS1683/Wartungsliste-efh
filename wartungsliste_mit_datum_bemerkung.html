@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wartungsliste EFH</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      color: #333;
+    }
+    .bereich {
+      margin-bottom: 2rem;
+    }
+    .task {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem;
+      background: #fff;
+      margin: 0.3rem 0;
+      border-radius: 5px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .task span {
+      flex: 1 1 200px;
+    }
+    .task select,
+    .task input[type="date"],
+    .task input[type="text"] {
+      padding: 0.3rem;
+      flex: 0 0 auto;
+    }
+    .task input[type="text"] {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wartungsliste Einfamilienhaus</h1>
+
+  <div class="bereich">
+    <h2>Sanitär</h2>
+    <div class="task"><span>Armaturen prüfen (Küche, Bad, G-WC)</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>WC-Spülkasten prüfen</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Geruchsverschlüsse reinigen</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Warmwasserspeicher warten</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Leitungen auf Dichtheit prüfen</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+  </div>
+
+  <div class="bereich">
+    <h2>Heizung</h2>
+    <div class="task"><span>Heizkessel warten</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Heizkörper entlüften</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Heizungswasser prüfen</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Umwälzpumpe prüfen</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Thermostatventile prüfen</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+  </div>
+
+  <div class="bereich">
+    <h2>Lüftung / Raumklima</h2>
+    <div class="task"><span>Lüftungsventile reinigen</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+    <div class="task"><span>Fensterdichtungen kontrollieren</span><select><option>Fällig</option><option>Erledigt</option><option>Überfällig</option></select><input type="date"><input type="text" placeholder="Bemerkung"></div>
+  </div>
+</body>
+</html>
